@@ -44,6 +44,7 @@ This can be set up via `binfmt_misc` and `qemu-user-static`.
 See e.g. https://github.com/multiarch/qemu-user-static for details on how to set this up.
 In short, running
 ```
+pacman -S gptfdisk dosfstools
 docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
 ```
 should set everything up for you.
