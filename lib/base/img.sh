@@ -67,7 +67,7 @@ _img_build() {
 
     # compute root partition size in MiB
     root_size=$(du -bc "${_DIR_DISK_ROOT}" | grep total | cut -f1)
-    root_part_size=$(( (root_size*110)/100/(1024*1024) + 1))
+    root_part_size=$(( (root_size*120)/100/(1024*1024) + 1))
 
     # compute disk size and create base image
     _msg2 "Allocating disk image..."
