@@ -1,5 +1,7 @@
 base
 base-devel
+meson
+cmake
 git
 wget
 iwd
